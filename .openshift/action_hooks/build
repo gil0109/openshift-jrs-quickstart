@@ -6,6 +6,9 @@
 # 
 # Script based on Liferay's quickstart.
 
+
+
+
 set -e
 
 #
@@ -59,6 +62,9 @@ if [ "$_JRS_DEPLOYING" = "$_JRS_DEPLOYED" ]
        echo "Downloading ${_JRS_NAME} : ${_JRS_DEPLOYING}"
        cd ${OPENSHIFT_TMP_DIR}
        wget -q -O ${_JRS_DEPLOYING}.zip "http://d1zrxsx5g57hp8.cloudfront.net/${_JRS_DEPLOYING}.zip"
+
+# Need to Update with new URL: https://sourceforge.net/projects/jasperserver/files/JasperServer/JasperReports%20Server%20Community%20Edition%206.4.0/
+
        echo "Extracting ${_JRS_NAME} ${_JRS_DEPLOYING}"
        jar -xvf ${OPENSHIFT_TMP_DIR}/${_JRS_DEPLOYING}.zip
    fi
