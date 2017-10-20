@@ -93,4 +93,7 @@ If you want to change it to Postgresql then you need to update the $REPO_DIR/cus
 __Note__ : 
 
 The datasources name could be changed by updting the file $APP_NAME/.openshift/config/standalone.xml and doing a git push
+
+Note: If this works, I will try to update with new version from Jaspersoft: TIB_js-jrs-cp_6.4.0_bin
+
 	
